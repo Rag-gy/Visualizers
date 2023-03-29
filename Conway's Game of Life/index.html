@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Conways' Game of Life</title>
+</head>
+<body>
+    <div class="container">
+
+        <div id="Title">
+            Conways' Game of Life
+        </div>
+
+        <button id="run" onclick="next()">Next</button>
+        <button onclick="simulate()">Simulate</button>
+        <button onclick="Stop()">Stop Simulation</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+    <div id="board"></div>
+</body>
+</html>
