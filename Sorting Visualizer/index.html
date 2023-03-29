@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input">
+        <h1 id="title" data-value="Sorting Visualizer">Sorting Visualizer</h1>
+        <input type="range" min=10 max=50 id="input" oninput="show()">
+        <div id="val">30</div>
+        <select name="method" id="method" onchange="scramble()">
+            <option value="bubble" selected>Bubble Sort</option>
+            <option value="quick">Quick Sort</option>
+            <option value="selection">Selection Sort</option>
+        </select>
+        <button onclick="sort()" class="button">Sort</button>
+        <button onclick='show()' class="button">Randomize</button>
+    </div>
+
+    <div class="container"></div>
+</body>
+</html>
